@@ -139,12 +139,12 @@ Function parse_show_feed(xml As Object, feed As Object) As Void
         item.Runtime          = validstr(curShow.runtime.GetText())
         item.HDBifUrl         = validstr(curShow.hdBifUrl.GetText())
         item.SDBifUrl         = validstr(curShow.sdBifUrl.GetText())
+
         item.StreamFormat = validstr(curShow.streamFormat.GetText())
         if item.StreamFormat = "" then  'set default streamFormat to mp4 if doesn't exist in xml
             item.StreamFormat = "mp4"
         endif
         
-        item.StreamFormat = "hls"
         'map xml attributes into screen specific variables
         item.ShortDescriptionLine1 = item.Title 
         item.ShortDescriptionLine2 = item.Description

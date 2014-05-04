@@ -30,8 +30,8 @@ for i in soup.find('div', class_="view-capitulos-completos") \
    print '  <item sdImg="%s" ' % item['img']
    print '        hdImg="%s">' % item['img']
    print '    <title><![CDATA[%s]]></title>' % item['title'].encode('utf-8')
+   print '    <streamFormat>hls</streamFormat>'
    print '    <media>'
-   print '      <streamFormat>hls</streamFormat>'
    print '      <streamUrl>%s</streamUrl>' % item['uri']
    print '    </media>'
    print '    <runtime>%s</runtime>' % item['duration']

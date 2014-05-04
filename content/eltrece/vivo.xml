@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<feed>
+  <item sdImg="http://static.eltrecetv.com.ar/sites/all/themes/eltrecetv2012/logo.png"
+        hdImg="http://static.eltrecetv.com.ar/sites/all/themes/eltrecetv2012/logo.png">
+    <title><![CDATA[El Trece en vivo]]></title>
+    <streamFormat>hls</streamFormat>
+    <media>
+      <streamUrl>http://stream.eltrecetv.com.ar:1935/live13/13tv/13tv1/playlist.m3u8</streamUrl>
+    </media>
+    <synopsis><![CDATA[Disponible sólo en algunos horarios]]></synopsis>
+  </item>
+</feed>

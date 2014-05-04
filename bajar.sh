@@ -67,8 +67,8 @@ function telefeshow() {
 <item sdImg="${img}" 
       hdImg="${img}">
   <title>${title}</title>
+  <streamFormat>mp4</streamFormat>
   <media>
-    <streamFormat>mp4</streamFormat>
     <streamUrl>${mp4url}</streamUrl>
   </media>
   <synopsis>${descr}</synopsis>

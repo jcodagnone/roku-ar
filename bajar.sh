@@ -61,7 +61,7 @@ function telefeshow() {
      if  [ ! -e $xml ]; then
       img=`cat $out|grep 'og:image'|sed 's/^.*content="//g'|cut -d'"' -f1`
       title=`cat $out|grep '<meta name="description"'|sed 's/^.*content="//g'|cut -d'"' -f1|sed 's/(.*$//g'|cut -d- -f2-|cut -b2-`"($d)"
-      mp4url=`cat $out|egrep  'rtmp.+mp4'|grep '^{file'|cut -d, -f2|cut -d"'" -f2|sed 's/&/&amp;/g'`
+      mp4url=`cat $out|egrep  'edgesuite'|cut -d'"' -f 4`
       descr=`cat $out |grep 'og:description'|sed 's/^.*content="//g'|cut -d'"' -f1`
       cat << EOF | xmllint --format --nocatalogs - |sed 1d > .tmp
 <item sdImg="${img}" 
